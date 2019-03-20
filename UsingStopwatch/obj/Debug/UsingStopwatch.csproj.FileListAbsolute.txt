@@ -5,3 +5,13 @@ D:\ProjectC#\UsingStopwatch\UsingStopwatch\UsingStopwatch\bin\Debug\UsingStopwat
 D:\ProjectC#\UsingStopwatch\UsingStopwatch\UsingStopwatch\bin\Debug\UsingStopwatch.pdb
 D:\ProjectC#\UsingStopwatch\UsingStopwatch\UsingStopwatch\obj\Debug\UsingStopwatch.exe
 D:\ProjectC#\UsingStopwatch\UsingStopwatch\UsingStopwatch\obj\Debug\UsingStopwatch.pdb
+C:\Users\Artsem\OneDrive\Рабочий стол\UsingStopwatch\UsingStopwatch\UsingStopwatch\bin\Debug\UsingStopwatch.exe.config
+C:\Users\Artsem\OneDrive\Рабочий стол\UsingStopwatch\UsingStopwatch\UsingStopwatch\bin\Debug\UsingStopwatch.exe
+C:\Users\Artsem\OneDrive\Рабочий стол\UsingStopwatch\UsingStopwatch\UsingStopwatch\bin\Debug\UsingStopwatch.pdb
+C:\Users\Artsem\OneDrive\Рабочий стол\UsingStopwatch\UsingStopwatch\UsingStopwatch\bin\Debug\System.ValueTuple.dll
+C:\Users\Artsem\OneDrive\Рабочий стол\UsingStopwatch\UsingStopwatch\UsingStopwatch\bin\Debug\System.ValueTuple.xml
+C:\Users\Artsem\OneDrive\Рабочий стол\UsingStopwatch\UsingStopwatch\UsingStopwatch\obj\Debug\UsingStopwatch.csprojAssemblyReference.cache
+C:\Users\Artsem\OneDrive\Рабочий стол\UsingStopwatch\UsingStopwatch\UsingStopwatch\obj\Debug\UsingStopwatch.csproj.CoreCompileInputs.cache
+C:\Users\Artsem\OneDrive\Рабочий стол\UsingStopwatch\UsingStopwatch\UsingStopwatch\obj\Debug\UsingStopwatch.csproj.CopyComplete
+C:\Users\Artsem\OneDrive\Рабочий стол\UsingStopwatch\UsingStopwatch\UsingStopwatch\obj\Debug\UsingStopwatch.exe
+C:\Users\Artsem\OneDrive\Рабочий стол\UsingStopwatch\UsingStopwatch\UsingStopwatch\obj\Debug\UsingStopwatch.pdb

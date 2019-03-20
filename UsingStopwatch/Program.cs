@@ -9,45 +9,42 @@ namespace UsingStopwatch
 {
     class Program
     {
-        //class instance for diagnostics
-        static Stopwatch sw = new Stopwatch();
-
         static void Main(string[] args)
         {
             //display the number of elements and create an array based on these elements
             Console.Write("enter amount of number (more than 2): ");
             int size = Convert.ToInt32(Console.ReadLine());
-            int[] numbers = FillArrayOfNumbers(size);
-
-            //testing algorithm
-            Console.WriteLine();
-
-            //1th gcd algorithm
-            AlgorithmDiagnostics(numbers, GetGCD);
-
-            //2th gcd algorithm
-            AlgorithmDiagnostics(numbers, GetGCDRational);
-
-            //3th gcd algorithm
-            AlgorithmDiagnostics(numbers, GetGCDRemainder);
-
-
-            Console.ReadKey();
-        }
-
-        static int[] FillArrayOfNumbers(int size)
-        {
             int[] numbers = new int[size];
             for (int i = 0; i < size; i++)
             {
                 Console.Write($"enter {i + 1}th number: ");
                 numbers[i] = Convert.ToInt32(Console.ReadLine());
             }
-            return numbers;
+
+            //testing algorithm
+            Console.WriteLine();
+            (int GUD, TimeSpan executionTime) res;
+
+            //1th gcd algorithm
+            res = AlgorithmDiagnostics(numbers, GetGCD);
+            Console.WriteLine($"GetGCD = {res.GUD} time = {res.executionTime}");
+
+            //2th gcd algorithm
+            res = AlgorithmDiagnostics(numbers, GetGCDRational);
+            Console.WriteLine($"GetGCDRational = {res.GUD} time = {res.executionTime}");
+
+            //3th gcd algorithm
+            res = AlgorithmDiagnostics(numbers, GetGCDRemainder);
+            Console.WriteLine($"GetGCDRemainder = {res.GUD} time = {res.executionTime}");
+
+
+            Console.ReadKey();
         }
 
-        static void AlgorithmDiagnostics(int[] numbers, Func<int, int, int> GCDAlgorithm)
+        static (int GUD, TimeSpan executionTime) AlgorithmDiagnostics(int[] numbers, Func<int, int, int> GCDAlgorithm)
         {
+            Stopwatch sw = new Stopwatch();
+
             sw.Start();
             int result = numbers[0];
             for (int i = 1; i < numbers.Length; i++)
@@ -55,9 +52,9 @@ namespace UsingStopwatch
                 result = GCDAlgorithm(result, numbers[i]);
             }
             sw.Stop();
-            //output of result
-            Console.WriteLine($"GetGCDRemainder = {result} time = {sw.Elapsed}");
-            sw.Reset();
+
+            //return of result
+            return (result, sw.Elapsed);
         }
 
         //1th GCD
@@ -84,6 +81,7 @@ namespace UsingStopwatch
                     return i;
                 }
             }
+
             return 1;
         }
 
